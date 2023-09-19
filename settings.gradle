@@ -1,0 +1,4 @@
+rootProject.name = 'spring_cloud_gateway'
+include 'employee'
+include 'consumer'
+include 'api-getway-config'
