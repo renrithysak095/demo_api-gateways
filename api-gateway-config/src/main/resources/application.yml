@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: employee
+          uri: http://localhost:2002/
+          predicates:
+            - Path=/api/v1/employee/**
+        - id: consumer
+          uri: http://localhost:2001/
+          predicates:
+            - Path=/api/v1/consumer/**
+server:
+  port: 2000
